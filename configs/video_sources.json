@@ -1,0 +1,59 @@
+{
+  "videos": [
+    {
+      "video_id": "cam_33_28_oct_f1_24",
+      "filename": "80452beff26a3dc952e5691a9eb5ba0a7a80e631d4b5a578d3c5e2a460405d20.mp4",
+      "relative_path": "datasets/raw/videos/80452beff26a3dc952e5691a9eb5ba0a7a80e631d4b5a578d3c5e2a460405d20.mp4",
+      "source_archive": "work3-20260625T082143Z-3-001.zip",
+      "source_path": "work3/Video/28_oct_f1_24/cam_33.mp4",
+      "width": 2560,
+      "height": 1440,
+      "fps": 20.0,
+      "frame_count": 5943
+    },
+    {
+      "video_id": "cam_3_28_oct_f2_24",
+      "filename": "92bd4a4d8210bf2a6e84f96ef923c20398097792f87ebdff1fa12756a89c6a96.mp4",
+      "relative_path": "datasets/raw/videos/92bd4a4d8210bf2a6e84f96ef923c20398097792f87ebdff1fa12756a89c6a96.mp4",
+      "source_archive": "work3-20260625T082143Z-3-001.zip",
+      "source_path": "work3/Video/28_oct_f2_24/cam_3.mp4",
+      "width": 2560,
+      "height": 1440,
+      "fps": 20.0,
+      "frame_count": 5973
+    },
+    {
+      "video_id": "cam_46_28_oct_f1_24",
+      "filename": "9573f8b9bd54f8d853a84b863fc8318d841200d59e90d260d1dcabc9dd67a90d.mp4",
+      "relative_path": "datasets/raw/videos/9573f8b9bd54f8d853a84b863fc8318d841200d59e90d260d1dcabc9dd67a90d.mp4",
+      "source_archive": "Work 2-20260625T082324Z-3-001.zip",
+      "source_path": "Work 2/work 2/Video/28_oct_f1_24/cam_46.mp4",
+      "width": 2560,
+      "height": 1440,
+      "fps": 20.0,
+      "frame_count": 5975
+    },
+    {
+      "video_id": "cam_39_26_nov_f1_24",
+      "filename": "c3d76fc22c875cb8f82c2818b120e17204988b71dbc0edbbef0697b7e7dba715.mp4",
+      "relative_path": "datasets/raw/videos/c3d76fc22c875cb8f82c2818b120e17204988b71dbc0edbbef0697b7e7dba715.mp4",
+      "source_archive": "work 1.zip",
+      "source_path": "work 1/Video/26_Nov_f1_24/cam_39.mp4",
+      "width": 2560,
+      "height": 1440,
+      "fps": 20.0,
+      "frame_count": 6088
+    },
+    {
+      "video_id": "cam_44_27_nov_f1_24",
+      "filename": "f5b7b63691af51cf7343f831260fc80a6026c10cb81401b7bb293526061a6b81.mp4",
+      "relative_path": "datasets/raw/videos/f5b7b63691af51cf7343f831260fc80a6026c10cb81401b7bb293526061a6b81.mp4",
+      "source_archive": "Work 2-20260625T082324Z-3-001.zip",
+      "source_path": "Work 2/work 2/Video/27_Nov_f1_24/cam_44.mp4",
+      "width": 2560,
+      "height": 1440,
+      "fps": 20.0,
+      "frame_count": 6096
+    }
+  ]
+}

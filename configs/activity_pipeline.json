@@ -1,0 +1,81 @@
+{
+  "project": "rmg-worker-activity-stage2",
+  "depends_on": "stage1_presence_detection",
+  "task": "activity_classification",
+  "classes": [
+    "idle",
+    "get",
+    "put",
+    "sew"
+  ],
+  "input_mode": "station_roi_crop",
+  "present_gate_required": true,
+  "feature_priority": {
+    "highest_priority": [
+      "hand position relative to work area",
+      "arm reach direction",
+      "fabric interaction near machine/table",
+      "short-term hand motion pattern"
+    ],
+    "secondary_priority": [
+      "head/body proximity to machine",
+      "overall posture"
+    ],
+    "notes": [
+      "Stage 2 should emphasize hand and work-area interaction more than full-body pose.",
+      "Idle means present without productive hand-work interaction.",
+      "Get and put are transitional hand actions and should be reviewed carefully."
+    ]
+  },
+  "gemini_label_assist": {
+    "enabled": true,
+    "recommended_model": "gemini-3.1-flash-lite",
+    "budget_model": "gemini-3.1-flash-lite",
+    "protocol_version": "altersense_stage2_gemini_v1",
+    "notes": [
+      "Use Gemini for structured segment labeling with local validation, not as unconstrained final truth.",
+      "Gemini outputs must include role-aware cycle phase fields and pass repo-side consistency checks before cycle counting.",
+      "Gemini video understanding samples video at 1 FPS by default, so rapid micro-actions may still need local temporal logic."
+    ]
+  },
+  "base_model": "mobilenet_v3_small",
+  "image_size": [
+    224,
+    224
+  ],
+  "sampling": {
+    "frame_level_inference": true,
+    "sample_every_n_frames": 10,
+    "temporal_smoothing_window": 7
+  },
+  "cycle_logic": {
+    "cycle_sequence": [
+      "put",
+      "sew",
+      "get"
+    ],
+    "min_state_duration_sec": 0.5,
+    "max_gap_between_steps_sec": 20.0,
+    "npt_labels": [
+      "idle"
+    ],
+    "working_labels": [
+      "get",
+      "put",
+      "sew"
+    ]
+  },
+  "training_plan": {
+    "phase_a": "train on labeled activity seed images",
+    "phase_b": "create Gemini-assisted video-domain review queue",
+    "phase_c": "fine-tune on reviewed video-domain ROI crops",
+    "phase_d": "temporal smoothing and cycle counting at inference"
+  },
+  "notes": [
+    "Start with image classification because the current activity dataset is still small.",
+    "Do not rely on Gemini or pseudo-labels as final activity supervision without review.",
+    "Upgrade to sequence modeling only after enough clip-level labels exist.",
+    "Cycle counting should use a state machine over activity predictions, not raw frame labels alone.",
+    "Hand/work-area evidence should dominate Stage 2 decisions whenever available."
+  ]
+}

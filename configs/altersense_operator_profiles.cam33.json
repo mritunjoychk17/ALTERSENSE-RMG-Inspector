@@ -1,0 +1,114 @@
+{
+  "company_name": "ALTERSENSE",
+  "factory_name": "Factory 1",
+  "floor_name": "Floor 1",
+  "line_name": "Line 1",
+  "video_id": "cam_33_28_oct_f1_24",
+  "cycle_steps_by_role": {
+    "sewing": [
+      ["align"],
+      ["put", "pass"],
+      ["sew", "adjust_machine"],
+      ["get"]
+    ],
+    "prep_pass": [
+      ["align"],
+      ["pass", "put"],
+      ["get"]
+    ]
+  },
+  "cycle_label_map_by_role": {
+    "sewing": {
+      "inspect": "align",
+      "pass": "put",
+      "adjust_machine": "sew",
+      "uncertain": "idle"
+    },
+    "prep_pass": {
+      "inspect": "align",
+      "uncertain": "idle"
+    }
+  },
+  "kpi_labels_by_role": {
+    "sewing": {
+      "productive": ["put", "pass", "sew", "adjust_machine", "get"],
+      "support": ["align", "inspect"],
+      "npt": ["idle", "uncertain"]
+    },
+    "sew_support": {
+      "productive": ["align", "inspect", "sew", "adjust_machine", "put", "pass", "get"],
+      "support": [],
+      "npt": ["idle", "uncertain"]
+    },
+    "prep_pass": {
+      "productive": ["align", "put", "pass", "get"],
+      "support": ["inspect"],
+      "npt": ["idle", "uncertain"]
+    }
+  },
+  "npt_policy_by_role": {
+    "sewing": {
+      "support_segment_soft_limit_sec": 6.0
+    },
+    "sew_support": {
+      "support_segment_soft_limit_sec": 30.0
+    },
+    "prep_pass": {
+      "support_segment_soft_limit_sec": 8.0
+    }
+  },
+  "stations": [
+    {
+      "station_id": "1",
+      "operator_name": "Rahima Akter",
+      "employee_id": "AS-2401",
+      "operation_name": "Armhole Topstitch",
+      "station_role": "sewing"
+    },
+    {
+      "station_id": "2",
+      "operator_name": "Md. Rakib Hossain",
+      "employee_id": "AS-2402",
+      "operation_name": "Shoulder Join",
+      "station_role": "sewing"
+    },
+    {
+      "station_id": "3",
+      "operator_name": "Nasima Begum",
+      "employee_id": "AS-2403",
+      "operation_name": "Sleeve Attach",
+      "station_role": "sewing",
+      "support_segment_soft_limit_sec": 12.0
+    },
+    {
+      "station_id": "4",
+      "operator_name": "Rubi Khatun",
+      "employee_id": "AS-2404",
+      "operation_name": "Collar Attach",
+      "station_role": "sew_support"
+    },
+    {
+      "station_id": "5",
+      "operator_name": "Mst. Jannat Ara",
+      "employee_id": "AS-2405",
+      "operation_name": "Bottom Hem",
+      "station_role": "sewing",
+      "support_segment_soft_limit_sec": 14.0
+    },
+    {
+      "station_id": "6",
+      "operator_name": "Md. Sohel Rana",
+      "employee_id": "AS-2406",
+      "operation_name": "Neck Rib Attach",
+      "station_role": "sewing"
+    },
+    {
+      "station_id": "7",
+      "operator_name": "Farzana Akter",
+      "employee_id": "AS-2407",
+      "operation_name": "Preparation / Pass Station",
+      "station_role": "prep_pass",
+      "support_segment_soft_limit_sec": 20.0
+    }
+  ]
+}

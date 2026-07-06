@@ -1,0 +1,39 @@
+{
+  "video_id": "single_station",
+  "station_id": "1",
+  "station_role": "sewing",
+  "label_space": ["align", "put", "sew", "get", "pass", "adjust_machine", "idle"],
+  "cycle_steps": [
+    ["align"],
+    ["put", "pass"],
+    ["sew", "adjust_machine"],
+    ["get"]
+  ],
+  "notes": [
+    "Derived from the expert single station report and used as the gold-standard cycle interpretation for this workstation.",
+    "This configuration should override weaker heuristic cycle definitions when training or evaluating the single-station queue."
+  ],
+  "segments": [
+    {"start_sec": 0.0, "end_sec": 1.89, "label": "align", "content": "Move and hold fabric to make two edges align with both hand."},
+    {"start_sec": 1.89, "end_sec": 2.69, "label": "put", "content": "Put fabric on bed and set inside feed dog for sewing."},
+    {"start_sec": 2.69, "end_sec": 4.65, "label": "sew", "content": "Push fabric forward under needle and continue sewing flow."},
+    {"start_sec": 4.65, "end_sec": 6.68, "label": "align", "content": "Operator re-aligns fabric edges with both hand."},
+    {"start_sec": 6.68, "end_sec": 6.88, "label": "put", "content": "Put fabric on bed for sewing with both hand."},
+    {"start_sec": 6.88, "end_sec": 8.44, "label": "sew", "content": "Push fabric under needle and complete the sewing motion."},
+    {"start_sec": 8.44, "end_sec": 9.59, "label": "pass", "content": "Disengage fabric from bed and dispatch it onto the stack."},
+    {"start_sec": 9.59, "end_sec": 14.16, "label": "get", "content": "Move from dispatch zone to get zone, retrieve fabric and shoulder tape."},
+    {"start_sec": 14.16, "end_sec": 15.89, "label": "adjust_machine", "content": "Attach shoulder tape with machine and hold tape in feed dog."},
+    {"start_sec": 15.89, "end_sec": 16.04, "label": "put", "content": "Slight push of fabric by left hand while right hand resets."},
+    {"start_sec": 16.04, "end_sec": 18.35, "label": "get", "content": "Reach fabric with both hands and pull it toward operator body."},
+    {"start_sec": 18.35, "end_sec": 20.96, "label": "align", "content": "Move and hold fabric to make two edges align with both hand."},
+    {"start_sec": 20.96, "end_sec": 22.32, "label": "put", "content": "Put fabric on bed and set it into feed dog for sewing."},
+    {"start_sec": 22.32, "end_sec": 23.89, "label": "sew", "content": "Push fabric forward under needle and continue sewing."},
+    {"start_sec": 23.89, "end_sec": 26.72, "label": "align", "content": "Operator re-aligns fabric edges with both hand."},
+    {"start_sec": 26.72, "end_sec": 27.13, "label": "put", "content": "Put fabric on bed for sewing with both hand."},
+    {"start_sec": 27.13, "end_sec": 27.71, "label": "sew", "content": "Push fabric under needle for sewing."},
+    {"start_sec": 27.71, "end_sec": 27.99, "label": "get", "content": "Left hand releases fabric and moves to get zone."},
+    {"start_sec": 27.99, "end_sec": 28.40, "label": "pass", "content": "Move fabric from get zone to dispatch zone by left hand."},
+    {"start_sec": 28.40, "end_sec": 31.38, "label": "get", "content": "Move from dispatch zone to get zone and pull fabric toward operator body."},
+    {"start_sec": 31.38, "end_sec": 37.667, "label": "align", "content": "Move and hold fabric to make two edges align with both hand."}
+  ]
+}

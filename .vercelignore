@@ -1,0 +1,37 @@
+# Local heavy assets should never be uploaded to Vercel
+artifacts/
+datasets/
+rmg/
+node_modules/
+.next/
+.agents/
+.codex/
+
+# Raw media and archives
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.7z
+*.tar
+*.gz
+*.rar
+*.pdf
+
+# Local models and weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.weights
+
+# Local secrets and caches
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+__pycache__/
+*.py[cod]

@@ -1,0 +1,25 @@
+{
+  "project": "rmg-worker-presence-stage1",
+  "task": "person_presence_detection",
+  "dataset_root": "datasets",
+  "raw_person_dir": "datasets/raw/person",
+  "raw_video_dir": "datasets/raw/videos",
+  "processed_root": "datasets/processed",
+  "interim_root": "datasets/interim",
+  "artifacts_root": "artifacts/stage1",
+  "labels": [
+    "absent",
+    "present"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "threshold": 0.75,
+  "temporal_smoothing_window": 15,
+  "split_strategy": "leave-one-video-out",
+  "notes": [
+    "Activity model assets are intentionally excluded for now.",
+    "ROI polygons and machine masks should be defined per video before frame-level training from video."
+  ]
+}

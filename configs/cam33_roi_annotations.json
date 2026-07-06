@@ -1,0 +1,397 @@
+{
+  "version": 2,
+  "description": "Dedicated ROI annotation config for cam_33 Stage 2 role-aware workstation review.",
+  "defaults": {
+    "frame_sample_for_annotation": 600,
+    "image_size": [
+      2560,
+      1440
+    ],
+    "presence_rule": "Label as present if any body part is inside the workstation station ROI.",
+    "station_count_is_fixed": false,
+    "current_template_station_slots": 8
+  },
+  "videos": [
+    {
+      "video_id": "cam_33_28_oct_f1_24",
+      "video_path": "datasets/raw/videos/80452beff26a3dc952e5691a9eb5ba0a7a80e631d4b5a578d3c5e2a460405d20.mp4",
+      "source_name": "cam_33.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "fps": 20.0,
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              214,
+              4
+            ],
+            [
+              222,
+              475
+            ],
+            [
+              765,
+              493
+            ],
+            [
+              816,
+              4
+            ],
+            [
+              214,
+              4
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                950,
+                163
+              ],
+              [
+                958,
+                16
+              ],
+              [
+                1079,
+                6
+              ],
+              [
+                1024,
+                61
+              ],
+              [
+                1069,
+                158
+              ],
+              [
+                950,
+                164
+              ]
+            ]
+          ],
+          "notes": "Visible station 1"
+        },
+        {
+          "station_id": "2",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              826,
+              1
+            ],
+            [
+              781,
+              493
+            ],
+            [
+              1442,
+              519
+            ],
+            [
+              1467,
+              4
+            ],
+            [
+              826,
+              9
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                1943,
+                140
+              ],
+              [
+                2016,
+                135
+              ],
+              [
+                2061,
+                432
+              ],
+              [
+                1974,
+                441
+              ],
+              [
+                1941,
+                460
+              ],
+              [
+                1935,
+                334
+              ],
+              [
+                1956,
+                308
+              ],
+              [
+                1943,
+                150
+              ]
+            ]
+          ],
+          "notes": "Visible station 2"
+        },
+        {
+          "station_id": "3",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              1524,
+              4
+            ],
+            [
+              1534,
+              516
+            ],
+            [
+              2155,
+              531
+            ],
+            [
+              2085,
+              1
+            ],
+            [
+              1524,
+              2
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                2265,
+                256
+              ],
+              [
+                2229,
+                99
+              ],
+              [
+                2311,
+                99
+              ],
+              [
+                2340,
+                218
+              ],
+              [
+                2293,
+                218
+              ],
+              [
+                2304,
+                262
+              ],
+              [
+                2265,
+                259
+              ]
+            ]
+          ],
+          "notes": "Visible station 3"
+        },
+        {
+          "station_id": "4",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              2098,
+              2
+            ],
+            [
+              2172,
+              529
+            ],
+            [
+              2558,
+              586
+            ],
+            [
+              2555,
+              7
+            ],
+            [
+              2100,
+              4
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                497,
+                1315
+              ],
+              [
+                629,
+                1335
+              ],
+              [
+                634,
+                1216
+              ],
+              [
+                498,
+                1180
+              ],
+              [
+                497,
+                1315
+              ]
+            ]
+          ],
+          "notes": "Visible station 4"
+        },
+        {
+          "station_id": "5",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              269,
+              1018
+            ],
+            [
+              494,
+              836
+            ],
+            [
+              780,
+              828
+            ],
+            [
+              762,
+              1428
+            ],
+            [
+              296,
+              1428
+            ],
+            [
+              269,
+              1023
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Visible station 5"
+        },
+        {
+          "station_id": "6",
+          "station_role": "sewing",
+          "station_roi_polygon": [
+            [
+              794,
+              813
+            ],
+            [
+              780,
+              1431
+            ],
+            [
+              1475,
+              1438
+            ],
+            [
+              1459,
+              882
+            ],
+            [
+              793,
+              815
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                1570,
+                1426
+              ],
+              [
+                1545,
+                1268
+              ],
+              [
+                1800,
+                1245
+              ],
+              [
+                1823,
+                1420
+              ],
+              [
+                1570,
+                1426
+              ]
+            ]
+          ],
+          "notes": "Visible station 6"
+        },
+        {
+          "station_id": "7",
+          "station_role": "prep_pass",
+          "station_roi_polygon": [
+            [
+              1495,
+              871
+            ],
+            [
+              1488,
+              1435
+            ],
+            [
+              2152,
+              1436
+            ],
+            [
+              2095,
+              826
+            ],
+            [
+              1498,
+              869
+            ]
+          ],
+          "machine_mask_polygons": [
+            [
+              [
+                2471,
+                1117
+              ],
+              [
+                2519,
+                1108
+              ],
+              [
+                2517,
+                1152
+              ],
+              [
+                2471,
+                1165
+              ],
+              [
+                2476,
+                1116
+              ]
+            ]
+          ],
+          "notes": "Visible station 7"
+        },
+        {
+          "station_id": "8",
+          "station_role": "prep_pass",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": "Removed from current cam_33 review set"
+        }
+      ]
+    }
+  ]
+}

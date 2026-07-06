@@ -1,0 +1,1228 @@
+{
+  "version": 2,
+  "description": "Fill workstation ROI polygons and machine masks per video before Stage 1 crop extraction. Station count may vary by video.",
+  "defaults": {
+    "frame_sample_for_annotation": 0,
+    "image_size": [
+      2560,
+      1440
+    ],
+    "presence_rule": "Label as present if any body part is inside the workstation station ROI.",
+    "station_count_is_fixed": false,
+    "current_template_station_slots": 20
+  },
+  "videos": [
+    {
+      "video_id": "absent_footage_dec05_cam05",
+      "video_path": "Absent Footage.mp4",
+      "source_name": "Absent Footage.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [
+            [
+              354,
+              4
+            ],
+            [
+              325,
+              483
+            ],
+            [
+              770,
+              450
+            ],
+            [
+              745,
+              1
+            ],
+            [
+              359,
+              4
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Top-left floral chair"
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [
+            [
+              940,
+              38
+            ],
+            [
+              945,
+              1
+            ],
+            [
+              938,
+              37
+            ],
+            [
+              920,
+              161
+            ],
+            [
+              942,
+              223
+            ],
+            [
+              922,
+              436
+            ],
+            [
+              1410,
+              501
+            ],
+            [
+              1419,
+              6
+            ],
+            [
+              950,
+              1
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Top row blue chair left-center"
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [
+            [
+              1858,
+              20
+            ],
+            [
+              1889,
+              526
+            ],
+            [
+              2391,
+              624
+            ],
+            [
+              2375,
+              37
+            ],
+            [
+              1863,
+              19
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Top row green chair center-right"
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [
+            [
+              117,
+              862
+            ],
+            [
+              145,
+              1428
+            ],
+            [
+              687,
+              1436
+            ],
+            [
+              631,
+              907
+            ],
+            [
+              121,
+              864
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Top-right blue chair"
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [
+            [
+              821,
+              941
+            ],
+            [
+              755,
+              934
+            ],
+            [
+              775,
+              1433
+            ],
+            [
+              1182,
+              1430
+            ],
+            [
+              1164,
+              1220
+            ],
+            [
+              1187,
+              967
+            ],
+            [
+              824,
+              946
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Bottom-left floral chair"
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [
+            [
+              1486,
+              962
+            ],
+            [
+              1473,
+              1430
+            ],
+            [
+              1907,
+              1435
+            ],
+            [
+              1972,
+              1436
+            ],
+            [
+              1966,
+              1320
+            ],
+            [
+              1897,
+              1222
+            ],
+            [
+              1930,
+              954
+            ],
+            [
+              1486,
+              962
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Bottom-center blue chair"
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [
+            [
+              2021,
+              943
+            ],
+            [
+              2025,
+              1436
+            ],
+            [
+              2339,
+              1436
+            ],
+            [
+              2389,
+              1332
+            ],
+            [
+              2389,
+              1253
+            ],
+            [
+              2357,
+              1201
+            ],
+            [
+              2383,
+              887
+            ],
+            [
+              2023,
+              941
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": "Bottom-right pink chair"
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "video_id": "cam_33_28_oct_f1_24",
+      "video_path": "datasets/raw/videos/80452beff26a3dc952e5691a9eb5ba0a7a80e631d4b5a578d3c5e2a460405d20.mp4",
+      "source_name": "work3/Video/28_oct_f1_24/cam_33.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "video_id": "cam_3_28_oct_f2_24",
+      "video_path": "datasets/raw/videos/92bd4a4d8210bf2a6e84f96ef923c20398097792f87ebdff1fa12756a89c6a96.mp4",
+      "source_name": "work3/Video/28_oct_f2_24/cam_3.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "video_id": "cam_46_28_oct_f1_24",
+      "video_path": "datasets/raw/videos/9573f8b9bd54f8d853a84b863fc8318d841200d59e90d260d1dcabc9dd67a90d.mp4",
+      "source_name": "Work 2/work 2/Video/28_oct_f1_24/cam_46.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "video_id": "cam_39_26_nov_f1_24",
+      "video_path": "datasets/raw/videos/c3d76fc22c875cb8f82c2818b120e17204988b71dbc0edbbef0697b7e7dba715.mp4",
+      "source_name": "work 1/Video/26_Nov_f1_24/cam_39.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [
+            [
+              142,
+              632
+            ],
+            [
+              181,
+              199
+            ],
+            [
+              160,
+              127
+            ],
+            [
+              179,
+              68
+            ],
+            [
+              179,
+              32
+            ],
+            [
+              757,
+              42
+            ],
+            [
+              747,
+              604
+            ],
+            [
+              145,
+              634
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [
+            [
+              806,
+              52
+            ],
+            [
+              803,
+              602
+            ],
+            [
+              1333,
+              596
+            ],
+            [
+              1306,
+              52
+            ],
+            [
+              808,
+              53
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [
+            [
+              1334,
+              52
+            ],
+            [
+              1360,
+              589
+            ],
+            [
+              1974,
+              611
+            ],
+            [
+              1998,
+              524
+            ],
+            [
+              2025,
+              506
+            ],
+            [
+              2129,
+              450
+            ],
+            [
+              2028,
+              197
+            ],
+            [
+              1863,
+              94
+            ],
+            [
+              1604,
+              55
+            ],
+            [
+              1336,
+              55
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [
+            [
+              21,
+              908
+            ],
+            [
+              24,
+              1433
+            ],
+            [
+              574,
+              1435
+            ],
+            [
+              539,
+              1302
+            ],
+            [
+              561,
+              1173
+            ],
+            [
+              562,
+              928
+            ],
+            [
+              24,
+              907
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [
+            [
+              590,
+              931
+            ],
+            [
+              580,
+              1168
+            ],
+            [
+              546,
+              1297
+            ],
+            [
+              587,
+              1435
+            ],
+            [
+              1177,
+              1436
+            ],
+            [
+              1167,
+              913
+            ],
+            [
+              592,
+              934
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [
+            [
+              1205,
+              911
+            ],
+            [
+              1205,
+              1436
+            ],
+            [
+              1835,
+              1435
+            ],
+            [
+              1879,
+              1400
+            ],
+            [
+              1871,
+              1297
+            ],
+            [
+              1802,
+              1042
+            ],
+            [
+              1799,
+              882
+            ],
+            [
+              1203,
+              913
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [
+            [
+              1843,
+              880
+            ],
+            [
+              1838,
+              1116
+            ],
+            [
+              1886,
+              1315
+            ],
+            [
+              1887,
+              1438
+            ],
+            [
+              2254,
+              1435
+            ],
+            [
+              2350,
+              1328
+            ],
+            [
+              2332,
+              1256
+            ],
+            [
+              2337,
+              1188
+            ],
+            [
+              2272,
+              1070
+            ],
+            [
+              2270,
+              857
+            ],
+            [
+              1846,
+              879
+            ]
+          ],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "video_id": "cam_44_27_nov_f1_24",
+      "video_path": "datasets/raw/videos/f5b7b63691af51cf7343f831260fc80a6026c10cb81401b7bb293526061a6b81.mp4",
+      "source_name": "Work 2/work 2/Video/27_Nov_f1_24/cam_44.mp4",
+      "frame_size": [
+        2560,
+        1440
+      ],
+      "workstations": [
+        {
+          "station_id": "1",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "2",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "3",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "4",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "5",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "6",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "7",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "8",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "9",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "10",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "11",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "12",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "13",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "14",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "15",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "16",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "17",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "18",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "19",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        },
+        {
+          "station_id": "20",
+          "station_roi_polygon": [],
+          "machine_mask_polygons": [],
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

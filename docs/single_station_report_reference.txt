@@ -1,0 +1,21 @@
+METHOD STUDY STYLE REFERENCE
+
+Use concise industrial action descriptions like these:
+
+1. Move and hold fabric to make two edges align with both hand.
+2. Put fabric on bed for sewing with both hand.
+3. Move fabric forward to set inside feed dog with left hand. Right hand moves backward to hold fabric alignment.
+4. Push fabric forward under needle (sew) with left hand. Right hand moves simultaneously with fabric grab.
+5. Left hand releases fabric after passing by feed dog. Right hand holds fabric end. Operator reaches fabric edge for further sewing with both hand.
+6. Operator re-aligns fabric edges with both hand.
+7. Bare left hand moves from dispatch zone to get fabric zone. Bare right hand reaches accessories zone after that.
+8. Move fabric from get zone to dispatch zone by left hand. Right hand reaches accessories zone.
+9. Disengage shoulder tape from bundle and move it towards machine bed by both hand.
+10. Attach shoulder tape with machine. Right hand spins it with machine part and left hand holds one end of shoulder tape in feed dog.
+
+Preferred output style:
+- short
+- action-first
+- hand-aware
+- workstation-specific
+- suitable for a table row under Content
