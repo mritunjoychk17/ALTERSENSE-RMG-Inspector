@@ -1,6 +1,8 @@
 import { loadReport, summarizeReliability } from "@/lib/report";
 import UploadEvaluationPanel from "@/app/components/upload-evaluation-panel";
 
+export const dynamic = "force-dynamic";
+
 function formatSeconds(seconds) {
   const total = Math.max(0, Math.round(Number(seconds || 0)));
   const hours = Math.floor(total / 3600);
