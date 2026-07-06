@@ -1,0 +1,355 @@
+{
+  "video_id": "cam_33_28_oct_f1_24",
+  "generated_at": null,
+  "report_profile": "vercel_sample_demo",
+  "meta": {
+    "source": "tracked_sample",
+    "based_on": "operator_report_cam33_phase_mixed_station136_plus5.json",
+    "override_stations": [
+      "4",
+      "6"
+    ],
+    "message": "Tracked sample report generated from the latest local GPU run for Vercel demo use."
+  },
+  "totals": {
+    "stations": 7,
+    "present_duration_sec": 2037,
+    "working_duration_sec": 1666,
+    "npt_duration_sec": 187,
+    "cycle_covered_work_time_sec": 942.999,
+    "cycle_count": 57,
+    "heuristic_cycle_count": 58,
+    "verified_cycle_count": 57,
+    "display_verified_cycle_count": 26,
+    "efficiency_pct": 81.79,
+    "duration_human": {
+      "present": "33m 57s",
+      "working": "27m 52s",
+      "npt": "3m 01s",
+      "cycle_covered_work": "16m 28s"
+    },
+    "cycle_kpi": {
+      "ok_stations": 3,
+      "partial_stations": 2,
+      "low_confidence_stations": 2,
+      "status": "low_confidence"
+    }
+  },
+  "stations": [
+    {
+      "station_id": "1",
+      "operator_name": "Rahima Akter",
+      "employee_id": "AS-2401",
+      "operation_name": "Armhole Topstitch",
+      "demo_title": "Senior Sewing Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "A",
+      "station_role": "sewing",
+      "presence_pct": 100,
+      "efficiency_pct": 81.1,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 127,
+      "support_work_duration_sec": 109,
+      "npt_duration_sec": 55,
+      "verified_cycle_count": 0,
+      "average_cycle_time_sec": 0,
+      "cycle_count": 0,
+      "current_label": "align_phase",
+      "current_cycle_label": "align_phase",
+      "reliability_badge": "partial",
+      "cycle_kpi": {
+        "status": "low_confidence",
+        "reason": "no_reliable_cycles",
+        "working_implied_cycles": 0,
+        "cycle_coverage_pct": 0
+      },
+      "cycle_kpi_display": {
+        "count": null,
+        "avg_cycle": "Low confidence",
+        "status": "low_confidence"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "3m 56s",
+        "productive": "2m 07s",
+        "support": "1m 49s",
+        "npt": "0m 55s",
+        "cycle_covered_work": "0m 00s",
+        "avg_cycle": "Low confidence",
+        "heuristic_avg_cycle": "0m 00s"
+      },
+      "report_override_source": null
+    },
+    {
+      "station_id": "2",
+      "operator_name": "Md. Rakib Hossain",
+      "employee_id": "AS-2402",
+      "operation_name": "Shoulder Join",
+      "demo_title": "Sewing Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "A-",
+      "station_role": "sewing",
+      "presence_pct": 100,
+      "efficiency_pct": 93.81,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 224,
+      "support_work_duration_sec": 49,
+      "npt_duration_sec": 18,
+      "verified_cycle_count": 8,
+      "average_cycle_time_sec": 22.75,
+      "cycle_count": 8,
+      "current_label": "sew_phase",
+      "current_cycle_label": "sew_phase",
+      "reliability_badge": "validated",
+      "cycle_kpi": {
+        "status": "partial",
+        "reason": "limited_cycle_coverage",
+        "working_implied_cycles": 12,
+        "cycle_coverage_pct": 0.667
+      },
+      "cycle_kpi_display": {
+        "count": null,
+        "avg_cycle": "Low confidence",
+        "status": "partial"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "4m 33s",
+        "productive": "3m 44s",
+        "support": "0m 49s",
+        "npt": "0m 18s",
+        "cycle_covered_work": "3m 02s",
+        "avg_cycle": "Low confidence",
+        "heuristic_avg_cycle": "0m 23s"
+      },
+      "report_override_source": null
+    },
+    {
+      "station_id": "3",
+      "operator_name": "Nasima Begum",
+      "employee_id": "AS-2403",
+      "operation_name": "Sleeve Attach",
+      "demo_title": "Line Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "B+",
+      "station_role": "sewing",
+      "presence_pct": 100,
+      "efficiency_pct": 85.57,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 162,
+      "support_work_duration_sec": 87,
+      "npt_duration_sec": 42,
+      "verified_cycle_count": 16,
+      "average_cycle_time_sec": 13.438,
+      "cycle_count": 16,
+      "current_label": "align_phase",
+      "current_cycle_label": "align_phase",
+      "reliability_badge": "validated",
+      "cycle_kpi": {
+        "status": "ok",
+        "reason": "",
+        "working_implied_cycles": 18.53,
+        "cycle_coverage_pct": 0.863
+      },
+      "cycle_kpi_display": {
+        "count": 16,
+        "avg_cycle": "0m 13s",
+        "status": "ok"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "4m 09s",
+        "productive": "2m 42s",
+        "support": "1m 27s",
+        "npt": "0m 42s",
+        "cycle_covered_work": "3m 35s",
+        "avg_cycle": "0m 13s",
+        "heuristic_avg_cycle": "0m 13s"
+      },
+      "report_override_source": null
+    },
+    {
+      "station_id": "4",
+      "operator_name": "Rubi Khatun",
+      "employee_id": "AS-2404",
+      "operation_name": "Collar Attach",
+      "demo_title": "Special Machine Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "A",
+      "station_role": "sew_support",
+      "presence_pct": 100,
+      "efficiency_pct": 94.85,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 276,
+      "support_work_duration_sec": 0,
+      "npt_duration_sec": 15,
+      "verified_cycle_count": 15,
+      "average_cycle_time_sec": 12,
+      "cycle_count": 15,
+      "current_label": "sew_phase",
+      "current_cycle_label": "sew_phase",
+      "reliability_badge": "validated",
+      "cycle_kpi": {
+        "status": "partial",
+        "reason": "limited_cycle_coverage",
+        "working_implied_cycles": 23,
+        "cycle_coverage_pct": 0.652
+      },
+      "cycle_kpi_display": {
+        "count": null,
+        "avg_cycle": "Low confidence",
+        "status": "partial"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "4m 36s",
+        "productive": "4m 36s",
+        "support": "0m 00s",
+        "npt": "0m 15s",
+        "cycle_covered_work": "3m 00s",
+        "avg_cycle": "Low confidence",
+        "heuristic_avg_cycle": "0m 12s"
+      },
+      "report_override_source": "operator_report_cam33_station4_override_v3.json"
+    },
+    {
+      "station_id": "5",
+      "operator_name": "Mst. Jannat Ara",
+      "employee_id": "AS-2405",
+      "operation_name": "Bottom Hem",
+      "demo_title": "Sewing Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "B+",
+      "station_role": "sewing",
+      "presence_pct": 100,
+      "efficiency_pct": 83.16,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 108,
+      "support_work_duration_sec": 134,
+      "npt_duration_sec": 49,
+      "verified_cycle_count": 10,
+      "average_cycle_time_sec": 18.6,
+      "cycle_count": 10,
+      "current_label": "pickup_phase",
+      "current_cycle_label": "pickup_phase",
+      "reliability_badge": "validated",
+      "cycle_kpi": {
+        "status": "ok",
+        "reason": "",
+        "working_implied_cycles": 13.011,
+        "cycle_coverage_pct": 0.769
+      },
+      "cycle_kpi_display": {
+        "count": 10,
+        "avg_cycle": "0m 19s",
+        "status": "ok"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "4m 02s",
+        "productive": "1m 48s",
+        "support": "2m 14s",
+        "npt": "0m 49s",
+        "cycle_covered_work": "3m 06s",
+        "avg_cycle": "0m 19s",
+        "heuristic_avg_cycle": "0m 19s"
+      },
+      "report_override_source": null
+    },
+    {
+      "station_id": "6",
+      "operator_name": "Md. Sohel Rana",
+      "employee_id": "AS-2406",
+      "operation_name": "Neck Rib Attach",
+      "demo_title": "Special Machine Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "A-",
+      "station_role": "sewing",
+      "presence_pct": 100,
+      "efficiency_pct": 95.88,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 222,
+      "support_work_duration_sec": 57,
+      "npt_duration_sec": 12,
+      "verified_cycle_count": 15,
+      "average_cycle_time_sec": 9.6,
+      "cycle_count": 15,
+      "current_label": "sew_phase",
+      "current_cycle_label": "sew_phase",
+      "reliability_badge": "validated",
+      "cycle_kpi": {
+        "status": "partial",
+        "reason": "limited_cycle_coverage",
+        "working_implied_cycles": 29.062,
+        "cycle_coverage_pct": 0.516
+      },
+      "cycle_kpi_display": {
+        "count": null,
+        "avg_cycle": "Low confidence",
+        "status": "partial"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "4m 39s",
+        "productive": "3m 42s",
+        "support": "0m 57s",
+        "npt": "0m 12s",
+        "cycle_covered_work": "2m 24s",
+        "avg_cycle": "Low confidence",
+        "heuristic_avg_cycle": "0m 10s"
+      },
+      "report_override_source": "operator_report_cam33_station6_phase_override_v3.json"
+    },
+    {
+      "station_id": "7",
+      "operator_name": "Farzana Akter",
+      "employee_id": "AS-2407",
+      "operation_name": "Preparation / Pass Station",
+      "demo_title": "Preparation Operator",
+      "demo_shift": "Day Shift",
+      "demo_grade": "A",
+      "station_role": "prep_pass",
+      "presence_pct": 100,
+      "efficiency_pct": 36.77,
+      "present_duration_sec": 291,
+      "productive_duration_sec": 11,
+      "support_work_duration_sec": 96,
+      "npt_duration_sec": 184,
+      "verified_cycle_count": 0,
+      "average_cycle_time_sec": 0,
+      "cycle_count": 0,
+      "current_label": "uncertain_phase",
+      "current_cycle_label": "uncertain_phase",
+      "reliability_badge": "unreliable",
+      "cycle_kpi": {
+        "status": "low_confidence",
+        "reason": "no_reliable_cycles",
+        "working_implied_cycles": 0,
+        "cycle_coverage_pct": 0
+      },
+      "cycle_kpi_display": {
+        "count": null,
+        "avg_cycle": "Low confidence",
+        "status": "low_confidence"
+      },
+      "duration_human": {
+        "present": "4m 51s",
+        "absent": "0m 00s",
+        "working": "1m 47s",
+        "productive": "0m 11s",
+        "support": "1m 36s",
+        "npt": "3m 04s",
+        "cycle_covered_work": "0m 00s",
+        "avg_cycle": "Low confidence",
+        "heuristic_avg_cycle": "0m 00s"
+      },
+      "report_override_source": null
+    }
+  ]
+}
