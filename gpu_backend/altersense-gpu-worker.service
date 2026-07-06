@@ -1,0 +1,16 @@
+[Unit]
+Description=ALTERSENSE GPU Worker API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=milab-1
+WorkingDirectory=/media/milab-1/009a6625-83db-44d1-8d42-364400c9fc34/Mritunjoys' Workplace/RMG
+ExecStart=/bin/bash /media/milab-1/009a6625-83db-44d1-8d42-364400c9fc34/Mritunjoys' Workplace/RMG/gpu_backend/run_worker.sh
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

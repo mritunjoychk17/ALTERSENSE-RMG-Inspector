@@ -27,6 +27,7 @@ This keeps the hosted UI fast and stable while leaving heavy video processing in
 Vercel UI:
 
 `REPORT_JSON_PATH`
+`GPU_WORKER_BASE_URL`
 
 Defaults to:
 
@@ -36,6 +37,8 @@ Local GPU worker only:
 
 - `PYTHON_BIN`
 - `GOOGLE_API_KEY`
+- `DASHBOARD_ORIGIN`
+- `PROFILE_VIDEO_ID`
 
 These should stay on the local/on-prem processing machine, not in the Vercel project, unless you intentionally move Python inference into another hosted runtime.
 
@@ -84,3 +87,10 @@ Do not push:
 
 - `/api/report`
 - `/api/pipeline`
+- `/api/jobs`
+
+## Split deployment
+
+For a Vercel frontend plus local GPU backend setup, see:
+
+`docs/vercel_local_gpu_architecture.md`

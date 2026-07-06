@@ -5,6 +5,9 @@
 .env.test.local
 .env.production.local
 *.env
+gpu_backend/worker.env
+*.pem
+*.key
 
 # Next.js / Node
 node_modules/
@@ -39,6 +42,10 @@ datasets/
 *.onnx
 *.engine
 *.weights
+yolo26n-pose/
+ultralytics/
+wandb/
+runs/
 
 # Raw media and archives
 *.mp4
@@ -57,6 +64,7 @@ datasets/
 Thumbs.db
 .idea/
 .vscode/
+.cloudflared/
 
 # Repo-internal local agent metadata
 .agents/

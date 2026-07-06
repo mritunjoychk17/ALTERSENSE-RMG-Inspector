@@ -1,0 +1,14 @@
+[Unit]
+Description=Cloudflare Tunnel For ALTERSENSE GPU Worker
+After=network-online.target altersense-gpu-worker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=milab-1
+ExecStart=/usr/bin/cloudflared tunnel --config /media/milab-1/009a6625-83db-44d1-8d42-364400c9fc34/Mritunjoys' Workplace/RMG/gpu_backend/cloudflared.yml run
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

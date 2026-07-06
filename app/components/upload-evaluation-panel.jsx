@@ -317,6 +317,31 @@ export default function UploadEvaluationPanel() {
   const [busy, setBusy] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [error, setError] = useState("");
+  const [workerHealth, setWorkerHealth] = useState(null);
+  const workerUnavailable = workerHealth?.ok === false;
+
+  useEffect(() => {
+    let cancelled = false;
+    async function loadHealth() {
+      try {
+        const resp = await fetch("/api/worker-health", { cache: "no-store" });
+        const data = await resp.json();
+        if (!cancelled) {
+          setWorkerHealth(data);
+        }
+      } catch {
+        if (!cancelled) {
+          setWorkerHealth({ ok: false, mode: "remote", worker: "unreachable", error: "Health check failed" });
+        }
+      }
+    }
+    loadHealth();
+    const timer = setInterval(loadHealth, 15000);
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+    };
+  }, []);
 
   useEffect(() => {
     if (!job?.jobId || !["queued", "running"].includes(job?.status?.status)) {
@@ -341,6 +366,10 @@ export default function UploadEvaluationPanel() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    if (workerUnavailable) {
+      setError("The GPU worker is offline. Restore the worker connection before starting analysis.");
+      return;
+    }
     if (!file) {
       setError("Please choose a video file first.");
       return;
@@ -406,6 +435,17 @@ export default function UploadEvaluationPanel() {
         <span>Executive KPI summary</span>
       </div>
 
+      <div className={`worker-health-box ${workerHealth?.ok ? "online" : "offline"}`}>
+        <strong>{workerHealth?.ok ? "Worker Online" : "Worker Offline"}</strong>
+        <span>
+          {workerHealth?.ok
+            ? workerHealth?.mode === "remote"
+              ? "Connected to the GPU worker through the configured secure endpoint."
+              : "Running in local embedded mode on this machine."
+            : "The GPU worker is not reachable. Upload will not complete until the worker is available."}
+        </span>
+      </div>
+
       <form className="upload-form" onSubmit={handleSubmit}>
         <label className="upload-primary">
           Video file
@@ -413,8 +453,8 @@ export default function UploadEvaluationPanel() {
           <span className="input-help">{file ? file.name : "Select a production video file"}</span>
         </label>
         <div className="upload-actions">
-          <button type="submit" disabled={busy}>
-            {busy ? "Processing..." : "Start analysis"}
+          <button type="submit" disabled={busy || workerUnavailable}>
+            {workerUnavailable ? "Worker offline" : busy ? "Processing..." : "Start analysis"}
           </button>
           <button
             type="button"
@@ -423,6 +463,9 @@ export default function UploadEvaluationPanel() {
           >
             {showAdvanced ? "Hide options" : "Advanced options"}
           </button>
+          {workerUnavailable ? (
+            <span className="upload-guard-note">Uploads are paused until the GPU worker comes back online.</span>
+          ) : null}
         </div>
 
         {showAdvanced ? (

@@ -1,0 +1,7 @@
+tunnel: your-tunnel-id
+credentials-file: /home/milab-1/.cloudflared/your-tunnel-id.json
+
+ingress:
+  - hostname: gpu-worker.your-domain.com
+    service: http://localhost:9000
+  - service: http_status:404

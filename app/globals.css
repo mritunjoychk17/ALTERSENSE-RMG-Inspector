@@ -432,6 +432,46 @@ h3 {
   border: 1px solid var(--line);
 }
 
+.worker-health-box {
+  display: grid;
+  gap: 6px;
+  margin: 16px 0 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 14px 34px rgba(12, 38, 84, 0.08);
+}
+
+.worker-health-box strong {
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.worker-health-box span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.worker-health-box.online {
+  border-color: rgba(41, 126, 98, 0.26);
+  background: linear-gradient(180deg, rgba(243, 253, 248, 0.98), rgba(233, 248, 240, 0.94));
+}
+
+.worker-health-box.online strong {
+  color: #1f6f53;
+}
+
+.worker-health-box.offline {
+  border-color: rgba(180, 83, 83, 0.24);
+  background: linear-gradient(180deg, rgba(255, 247, 247, 0.98), rgba(252, 235, 235, 0.94));
+}
+
+.worker-health-box.offline strong {
+  color: #9f3f3f;
+}
+
 .upload-form label {
   display: grid;
   gap: 8px;
@@ -445,6 +485,12 @@ h3 {
 .upload-actions {
   display: grid;
   gap: 10px;
+}
+
+.upload-guard-note {
+  font-size: 0.85rem;
+  color: #9f3f3f;
+  line-height: 1.5;
 }
 
 .upload-form input,
