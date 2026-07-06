@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { remoteWorkerBaseUrl } from "@/lib/dashboard-jobs";
-import { resolveStationImagePath } from "@/lib/report";
+import { publicStationImageUrl, resolveStationImagePath } from "@/lib/report";
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
@@ -31,7 +31,7 @@ export async function GET(request) {
 
   const imagePath = await resolveStationImagePath(videoId, stationId);
   if (!imagePath) {
-    return new Response("Operator image not found.", { status: 404 });
+    return Response.redirect(new URL(publicStationImageUrl(videoId, stationId), request.url), 307);
   }
 
   const repoRoot = path.resolve(process.cwd());
