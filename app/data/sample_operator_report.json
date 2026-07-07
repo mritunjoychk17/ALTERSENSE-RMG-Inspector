@@ -17,10 +17,10 @@
     "working_duration_sec": 1666,
     "npt_duration_sec": 187,
     "cycle_covered_work_time_sec": 942.999,
-    "cycle_count": 57,
-    "heuristic_cycle_count": 58,
-    "verified_cycle_count": 57,
-    "display_verified_cycle_count": 26,
+    "cycle_count": 69,
+    "heuristic_cycle_count": 70,
+    "verified_cycle_count": 69,
+    "display_verified_cycle_count": 38,
     "efficiency_pct": 81.79,
     "duration_human": {
       "present": "33m 57s",
@@ -51,22 +51,22 @@
       "productive_duration_sec": 127,
       "support_work_duration_sec": 109,
       "npt_duration_sec": 55,
-      "verified_cycle_count": 0,
-      "average_cycle_time_sec": 0,
-      "cycle_count": 0,
+      "verified_cycle_count": 12,
+      "average_cycle_time_sec": 19.667,
+      "cycle_count": 12,
       "current_label": "align_phase",
       "current_cycle_label": "align_phase",
-      "reliability_badge": "partial",
+      "reliability_badge": "validated",
       "cycle_kpi": {
-        "status": "low_confidence",
-        "reason": "no_reliable_cycles",
-        "working_implied_cycles": 0,
-        "cycle_coverage_pct": 0
+        "status": "ok",
+        "reason": "",
+        "working_implied_cycles": 12,
+        "cycle_coverage_pct": 1
       },
       "cycle_kpi_display": {
-        "count": null,
-        "avg_cycle": "Low confidence",
-        "status": "low_confidence"
+        "count": 12,
+        "avg_cycle": "0m 20s",
+        "status": "ok"
       },
       "duration_human": {
         "present": "4m 51s",
@@ -75,9 +75,9 @@
         "productive": "2m 07s",
         "support": "1m 49s",
         "npt": "0m 55s",
-        "cycle_covered_work": "0m 00s",
-        "avg_cycle": "Low confidence",
-        "heuristic_avg_cycle": "0m 00s"
+        "cycle_covered_work": "3m 56s",
+        "avg_cycle": "0m 20s",
+        "heuristic_avg_cycle": "0m 20s"
       },
       "report_override_source": null
     },
