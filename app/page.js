@@ -44,7 +44,6 @@ function OperatorThumb({ station }) {
   return <div className="worker-avatar">{initials(station.operator_name)}</div>;
 }
 
-const trustedBrands = ["Cutting", "Sewing", "Finishing", "Quality", "Output", "Operations"];
 const deliveryPoints = ["Video upload", "Operator KPI board", "Overlay playback"];
 
 function OperatorIdentity({ station }) {
@@ -189,18 +188,6 @@ export default async function HomePage() {
             <span>Overlay review available</span>
             <span>Station-level KPI reporting</span>
           </div>
-        </div>
-      </section>
-
-      <section className="brand-strip">
-        <div>
-          <p className="eyebrow">Operations Scope</p>
-          <h2>Structured for day-to-day production review</h2>
-        </div>
-        <div className="brand-logos" aria-label="Production workflow labels">
-          {trustedBrands.map((label) => (
-            <span key={label}>{label}</span>
-          ))}
         </div>
       </section>
 
